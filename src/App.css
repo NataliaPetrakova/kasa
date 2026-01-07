@@ -48,7 +48,8 @@ header {
 
 header .logo {
   width: 210px;
-  height: 68px;
+  height: auto;
+  object-fit: contain;
 }
 
 header nav {
@@ -174,4 +175,65 @@ footer p {
   right: 0;
   height: 100%;
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Collapse */
+.collapse {
+  margin-bottom: 30px;
+}
+
+.collapse-header {
+  background-color: #FF6060;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.collapse-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.collapse-arrow {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.collapse-arrow.open {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  background-color: #F6F6F6;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.collapse-content p {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
 }
