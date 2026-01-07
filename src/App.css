@@ -237,3 +237,40 @@ footer p {
   line-height: 1.7;
   text-align: left;
 }
+
+/* Not Found Page */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.not-found h1 {
+  font-size: 288px;
+  font-weight: 700;
+  color: #FF6060;
+  margin: 0;
+  line-height: 1;
+}
+
+.not-found p {
+  font-size: 36px;
+  color: #FF6060;
+  margin: 60px 0;
+  max-width: 600px;
+}
+
+.not-found a {
+  color: #FF6060;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: 100px;
+}
+
+.not-found a:hover {
+  text-decoration: none;
+}
