@@ -1,6 +1,6 @@
 import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
-import bannerImage from '../assets/Banner_home.jpg'
+import bannerImage from '../assets/Banner_propos.jpg'
 
 function About() {
   const aboutData = [
