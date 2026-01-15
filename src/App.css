@@ -100,6 +100,15 @@ header nav a.active {
   z-index: 1;
 }
 
+.home .banner h1 {
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
 /* Home page */
 .home {
   max-width: 1240px;
@@ -122,7 +131,7 @@ footer {
   color: white;
   text-align: center;
   padding: 66px 0 29px;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 footer .footer-logo {
@@ -368,6 +377,8 @@ footer p {
   padding: 5px 20px;
   border-radius: 10px;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; 
 }
 
 .logement-host {
@@ -404,7 +415,8 @@ footer p {
 
 .star {
   color: #E3E3E3;
-  font-size: 30px;
+  font-size: 36px;
+  line-height: 1;
 }
 
 .star.filled {
@@ -419,6 +431,7 @@ footer p {
 
 .logement-details .collapse {
   flex: 1;
+  margin-bottom: 0;
 }
 
 /* About page */
@@ -456,3 +469,230 @@ footer p {
   margin-bottom: 0;
 }
 
+
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    padding: 20px;
+  }
+
+  header .logo {
+    width: 145px;
+  }
+
+  header nav {
+    gap: 26px;
+  }
+
+  header nav a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  /* Banner */
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+
+   .home .banner h1 {
+    padding: 0 20px;
+  }
+
+  /* Home page */
+  .home {
+    padding: 0 20px;
+  }
+
+  .properties-grid {
+    background-color: transparent;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Card */
+  .card {
+    width: 100%;
+    height: 255px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 62px 0 62px;
+  }
+
+  footer .footer-logo {
+    width: 122px;
+    height: 40px;
+  }
+
+  footer p {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  /* Collapse */
+  .collapse-header {
+    padding: 10px 12px;
+  }
+
+  .collapse-header h3 {
+    font-size: 13px;
+  }
+
+  .collapse-arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .collapse-content {
+    padding: 15px 12px;
+  }
+
+  .collapse-content p {
+    font-size: 12px;
+  }
+
+  /* Not Found Page */
+  .not-found {
+    padding: 195px 20px 0;
+  }
+
+  .not-found h1 {
+    font-size: 96px;
+  }
+
+  .not-found p {
+    font-size: 18px;
+    margin: 11px 0 133px;
+  }
+
+  .not-found a {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  /* Gallery */
+  .gallery {
+    height: 255px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .gallery-arrow {
+    width: 24px;
+    height: 24px;
+    font-size: 40px;
+  }
+
+  .gallery-arrow-left {
+    left: 6px;
+  }
+
+  .gallery-arrow-right {
+    right: 6px;
+  }
+
+  .gallery-counter {
+    display: none;
+  }
+
+  /* Logement Page */
+  .logement {
+    padding: 0 20px;
+  }
+
+  .logement-header {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .logement-info h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .logement-location {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .logement-tags {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 4px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+  }
+
+  .logement-host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .host-info {
+    gap: 10px;
+  }
+
+  .host-name {
+    font-size: 12px;
+    max-width: 80px;
+  }
+
+  .host-info img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .rating {
+    gap: 5px;
+  }
+
+  .star {
+    font-size: 18px;
+  }
+
+  .logement-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logement-details .collapse {
+    margin-bottom: 0; 
+  }
+
+  /* About page */
+  .about {
+    padding: 0 20px;
+  }
+
+  .about .banner {
+    max-width: 100%;
+    height: 223px;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-content .collapse {
+    margin-bottom: 20px;
+  }
+
+}
