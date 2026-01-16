@@ -41,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  padding: 20px 100px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -267,7 +267,7 @@ footer p {
 }
 
 .not-found a {
-  color: #FF6060;
+  color: #000000;
   font-size: 18px;
   text-decoration: underline;
   margin-top: 100px;
@@ -299,12 +299,10 @@ footer p {
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: white;
-  font-size: 80px;
   cursor: pointer;
   padding: 0;
-  width: 48px;
-  height: 80px;
+  width: 96px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,17 +408,20 @@ footer p {
 
 .rating {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .star {
-  color: #E3E3E3;
-  font-size: 36px;
-  line-height: 1;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.star.filled {
-  color: #FF6060;
+.star.svg {
+  width: 100%;
+  height: 100%;
 }
 
 .logement-details {
@@ -580,7 +581,7 @@ footer p {
     font-size: 14px;
     margin-top: 0;
   }
-
+ 
   /* Gallery */
   .gallery {
     height: 255px;
@@ -591,7 +592,6 @@ footer p {
   .gallery-arrow {
     width: 24px;
     height: 24px;
-    font-size: 40px;
   }
 
   .gallery-arrow-left {
@@ -659,8 +659,13 @@ footer p {
     height: 32px;
   }
 
-  .rating {
+    .rating {
     gap: 5px;
+  }
+  
+  .star {
+    width: 18px;
+    height: 18px;
   }
 
   .star {
