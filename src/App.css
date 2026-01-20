@@ -12,6 +12,12 @@
   transition: filter 300ms;
 }
 
+header .logo {
+  width: 210px;
+  height: auto;
+  object-fit: contain;
+}
+
 
 /* Header */
 header {
