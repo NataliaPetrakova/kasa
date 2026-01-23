@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1768811316367" clover="3.2.0">
-  <project timestamp="1768811316367" name="All files">
-    <metrics statements="24" coveredstatements="24" conditionals="22" coveredconditionals="21" methods="15" coveredmethods="15" elements="61" coveredelements="60" complexity="0" loc="24" ncloc="24" packages="3" files="12" classes="12"/>
+<coverage generated="1769157245974" clover="3.2.0">
+  <project timestamp="1769157245974" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="22" coveredconditionals="21" methods="15" coveredmethods="15" elements="62" coveredelements="61" complexity="0" loc="25" ncloc="25" packages="3" files="12" classes="12"/>
     <package name="assets">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Banner_home.jpg" path="/Users/petrakovanatalia/kasa-app/src/assets/Banner_home.jpg">
@@ -57,14 +57,15 @@
       </file>
     </package>
     <package name="pages">
-      <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
       <file name="Home.jsx" path="/Users/petrakovanatalia/kasa-app/src/pages/Home.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="10" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
       </file>
       <file name="NotFound.jsx" path="/Users/petrakovanatalia/kasa-app/src/pages/NotFound.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

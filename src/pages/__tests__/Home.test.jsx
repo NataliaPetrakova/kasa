@@ -28,7 +28,7 @@ describe('Home Page', () => {
     expect(screen.getByText('Chargement...')).toBeInTheDocument()
   })
 
-  it('should display error message when API fails', () => {
+  it('should redirect to 404 when API fails', () => {
     useFetch.mockReturnValue({
       data: null,
       loading: false,
@@ -37,7 +37,9 @@ describe('Home Page', () => {
 
     renderWithRouter(<Home />)
     
-    expect(screen.getByText(/Erreur : Erreur de connexion/i)).toBeInTheDocument()
+    // Vérifie que le contenu normal (banner, grid) n'est pas affiché
+    expect(screen.queryByText('Chez vous, partout et ailleurs')).not.toBeInTheDocument()
+    expect(screen.queryByRole('img', { name: /banner/i })).not.toBeInTheDocument()
   })
 
   it('should render banner with correct text', () => {

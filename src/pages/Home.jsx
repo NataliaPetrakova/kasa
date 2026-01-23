@@ -1,3 +1,4 @@
+import { Navigate } from 'react-router-dom'
 import Banner from '../components/Banner'
 import Card from '../components/Card'
 import useFetch from '../hooks/useFetch'
@@ -7,7 +8,11 @@ function Home() {
   const { data: properties, loading, error } = useFetch('http://localhost:8080/api/properties')
 
   if (loading) return <div>Chargement...</div>
-  if (error) return <div>Erreur : {error}</div>
+  
+  // Si erreur, redirige vers la page 404
+  if (error) {
+    return <Navigate to="/404" replace />
+  }
 
   return (
     <div className="home">

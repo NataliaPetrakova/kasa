@@ -34,7 +34,7 @@ describe('NotFound Page', () => {
     renderWithRouter(<NotFound />)
     
     const link = screen.getByRole('link')
-    expect(link).toHaveAttribute('href', '/')
+    expect(link).toHaveAttribute('href', '/home')
   })
 
   it('should render all elements together', () => {

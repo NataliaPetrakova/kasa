@@ -39,7 +39,7 @@ describe('Header Component', () => {
     
     const accueilLink = screen.getByText('Accueil')
     expect(accueilLink).toBeInTheDocument()
-    expect(accueilLink).toHaveAttribute('href', '/')
+    expect(accueilLink).toHaveAttribute('href', '/home')
   })
 
   it('should render A Propos link with correct href', () => {
